@@ -2,7 +2,7 @@ package solutions
 
 class Day1 {
     companion object{
-        fun solveDay1() {
+        fun solve() {
             val inputLines = Main.loadFile("./day1/input.txt")
 
             var elf = 1
