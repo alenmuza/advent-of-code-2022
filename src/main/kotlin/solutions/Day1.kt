@@ -19,8 +19,8 @@ class Day1 {
                 }
             }
 
-            println("Day1: maxSingleElfCalories=${elfToCalories.values.max()}")
-            println("Day1: maxSingleElfCalories=${elfToCalories.values.sortedDescending().take(3).sum()}")
+            println("Day1 1st star = ${elfToCalories.values.max()}")
+            println("Day1 2nd star = ${elfToCalories.values.sortedDescending().take(3).sum()}")
         }
     }
 

@@ -22,8 +22,8 @@ class Day2 {
             val inputLines = Main.loadFile("./day2/input.txt")
 
 
-            println("Day2: myScore= ${inputLines.map { scoreSingleRound(it) }.sum()}")
-            println("Day2: myScore with expeted result= ${inputLines.map { scoreSingleRoundWithExpectedOutcome(it) }.sum()}")
+            println("Day2 1st star = ${inputLines.map { scoreSingleRound(it) }.sum()}")
+            println("Day1 2nd star = ${inputLines.map { scoreSingleRoundWithExpectedOutcome(it) }.sum()}")
         }
 
         fun scoreSingleRound(round: String): Int {

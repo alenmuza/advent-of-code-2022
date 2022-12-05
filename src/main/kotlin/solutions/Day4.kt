@@ -20,13 +20,13 @@ class Day4 {
                     doesOneContainAnother(it)
                 }
 
-            println("Day4 result 1st star = $result1")
+            println("Day4 1st star = $result1")
 
             val result2 = pairOfRanges.count {
                     doesOneOverlapAnother(it)
                 }
 
-            println("Day4 result 2st star = $result2")
+            println("Day4 2st star = $result2")
         }
 
         private fun doesOneOverlapAnother(it: Pair<IntRange, IntRange>) =

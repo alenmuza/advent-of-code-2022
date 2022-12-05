@@ -15,7 +15,7 @@ class Day3 {
                 .map { getPriorityScore(it) }
                 .sum()
 
-            println("Day3 result 1st star = $result")
+            println("Day3 1st star = $result")
 
             val result2 = inputLines.chunked(3)
                 .map {threeRucksacs ->
@@ -26,7 +26,7 @@ class Day3 {
                 .map { getPriorityScore(it) }
                 .sum()
 
-            println("Day3 result 2nd star = $result2")
+            println("Day3 2nd star = $result2")
         }
 
         private fun getPriorityScore(it: Char) = letters.indexOf(it) + 1

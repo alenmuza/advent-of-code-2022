@@ -1,7 +1,4 @@
-import solutions.Day1
-import solutions.Day2
-import solutions.Day3
-import solutions.Day4
+import solutions.*
 import java.io.File
 
 fun main(args: Array<String>) {
@@ -9,6 +6,8 @@ fun main(args: Array<String>) {
     Day2.solve()
     Day3.solve()
     Day4.solve()
+    Day5.solve1()
+    Day5.solve2()
 }
 
 class Main {
