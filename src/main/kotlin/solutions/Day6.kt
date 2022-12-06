@@ -5,19 +5,19 @@ class Day6 {
         fun solve() {
             val inputLines = Main.loadFile("./day6/input.txt")
 
-            val firstLine = inputLines[0]
-            println("Day6 1st star = ${findIndexForDistinctCharsEnd(firstLine, 4)}")
-            println("Day6 2nd star = ${findIndexForDistinctCharsEnd(firstLine, 14)}")
+            val line = inputLines[0]
+            println("Day6 1st star = ${findIndexOfDistinctCharSegmentEnd(line, 4)}")
+            println("Day6 2nd star = ${findIndexOfDistinctCharSegmentEnd(line, 14)}")
         }
 
-        private fun findIndexForDistinctCharsEnd(firstLine: String, distinctChars: Int): Int {
-            for (i in 0..firstLine.length - distinctChars) {
-                val segment = firstLine.substring(i, i + distinctChars)
+        private fun findIndexOfDistinctCharSegmentEnd(firstLine: String, segmentLength: Int): Int {
+            for (i in 0..firstLine.length - segmentLength) {
+                val segment = firstLine.substring(i, i + segmentLength)
                 if (!segment.any { c -> segment.count { c == it } > 1 }) {
-                    return i + distinctChars
+                    return i + segmentLength
                 }
             }
-            throw IllegalStateException()
+            throw IllegalStateException("Segment with length $segmentLength not found!")
         }
     }
 }
