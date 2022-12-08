@@ -37,7 +37,7 @@ class Day7 {
             val foldersWithSize = uniqueFolders.map { f -> f to files.filter { it.dirPath.startsWith(f) }.map { it.size }.sum() }
             println("Day7 1st star = ${foldersWithSize.filter { it.second < 100000 }.map { it.second }.sum()}")
 
-            val missingSpace = 30000000 - (70000000 - foldersWithSize.first() { it.first == "root" }.second)
+            val missingSpace = 30000000 - (70000000 - foldersWithSize.first { it.first == "root" }.second)
             println("Day7 2nd star = ${foldersWithSize.sortedBy { it.second }.first { it.second > missingSpace }.second}")
         }
     }

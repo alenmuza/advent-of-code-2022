@@ -10,6 +10,8 @@ fun main(args: Array<String>) {
     Day5.solve2()
     Day6.solve()
     Day7.solve()
+    Day8.solve()
+
 }
 
 class Main {
