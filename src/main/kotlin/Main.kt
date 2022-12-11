@@ -13,7 +13,7 @@ fun main(args: Array<String>) {
     Day8.solve()
     Day9.solve()
     Day10.solve()
-
+    Day11.solve()
 }
 
 class Main {
